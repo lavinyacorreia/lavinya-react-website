@@ -20,7 +20,26 @@ function Navbar() {
                         {click ? <FaTimes /> : <FaBars />}   
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li></li>
+                        <li className="nav-item">
+                            <Link to='/' className="nav-links">
+                                Home
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/about' className="nav-links">
+                                Sobre 
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/experiences' className="nav-links">
+                                Experiência
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to='/contact' className="nav-links">
+                                Contato
+                            </Link>
+                        </li>
                     </ul>
                 </div>
 
